@@ -37,7 +37,7 @@ __------------ In progress ------------__
 ### Links
 
 - Live Site URL: [accessible-contact-form](https://accessible-contact-form.web.app/)
-- Solution URL: [nil]()
+- Solution URL: [null]()
 
 ## My process
 
@@ -49,8 +49,6 @@ __------------ In progress ------------__
 - Flexbox
 
 ### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
 1. __Accessibility implementation__
 
@@ -77,17 +75,17 @@ button:focus-visible {
 ```
 2. __How to reduce css redundancy__
 - Implemented Inheritance, group selectors, utility and reusable classes shown below:
-    a. Utility Classes Defined:
-        - .d-block: Sets the display property to block.
-        - .field-txt: Sets the font size to 1.2rem.
-        - .width-100: Sets the width to 100%.
-        - .txt-centered: Aligns text to the center.
-        - .align-vertical: Aligns items vertically in a flex container.
-    b. Reusuable Classes Defined:
-        - .labels: Styles labels in the form.
-        - .button: Styles the button element.
-        - .unique-label: Styles unique labels.
-        - .radio: Styles the wrapper of radio inputs and their labels
+    1. Utility Classes Defined:
+        - **.d-block:** Sets the display property to block.
+        - **.field-txt:** Sets the font size to 1.2rem.
+        - **.width-100:** Sets the width to 100%.
+        - **.txt-centered:** Aligns text to the center.
+        - **.align-vertical:** Aligns items vertically in a flex container.
+    1. Reusuable Classes Defined:
+        - **.labels:** Styles labels in the form.
+        - **.button:** Styles the button element.
+        - **.unique-label:** Styles unique labels.
+        - **.radio:** Styles the wrapper of radio inputs and their labels
 
 
 ### Continued development
