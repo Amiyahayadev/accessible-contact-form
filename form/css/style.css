@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+/*--------
+          css reset code  ---------*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+	background-color: #8fe8b9;
+	font-family: "Karla", sans-serif;
+	font-weight: 400;
+	color: #2a3638;
+    font-size: 1rem;
+}
+main {
+    width: 90%;
+	max-width: 800px;
+	margin: 0 auto;
+    padding: 5rem 0;
+}
+h1 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+/*--------
+            utility classes  --------*/
+.d-block {
+    display: block;
+}
+.field-txt {
+	font-size: 1.2rem;
+}
+.width-100 {
+	width: 100%;
+}
+.txt-centered {
+    text-align: center;
+}
+.align-vertical {
+	display: flex;
+	align-items: center;
+}
+
+/*--------
+            Form  --------*/
+form {
+	background-color: #fff;
+	border-radius: 12px;
+	padding: 1.25rem;
+}
+h1,
+.form-section,
+.form-section div:first-child {
+	margin-bottom: 1.5em;
+}
+.labels,
+.button{
+	font-size: 1rem;
+}
+form label:not(.unique-label),
+legend {
+	/* exclude checkbox and radio box*/
+	margin-bottom: 0.3em;
+}
+.unique-label {
+	/* for radio and checkbox*/
+	display: inline-block;
+	margin-left: 0.8em;
+}
+label span,
+legend span{
+	color: #0c443a;
+}
+form label[for="consent-check"] {
+	max-width: 90%;
+}
+input,
+textarea,
+.radio {
+	border: 1px solid #7f9496;
+	border-radius: 6px;
+	padding: 0.75rem;
+}
+.radio {
+	margin-bottom: 0.5em;
+}
+fieldset {
+	border: 0;
+}
+/* change Styling for radio buttons and checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+	accent-color: #0c443a;
+}
+.button {
+	background-color: #0c443a;
+	border: none;
+	border-radius: 6px;
+	color: #fff;
+	cursor: pointer;
+	line-height: 1.5;
+	padding: 0.75rem 1.25rem;
+}
+/*--------
+            Interactive states --------*/
+
+/* active and hover states */
+input:active,
+textarea:active,
+.radio:hover,
+input:hover,
+textarea:hover {
+	border: 1px solid #0c443a;
+	cursor: pointer;
+}
+/* when user on keyboard only */
+button:focus-visible {
+	outline-color: #8fe8b9;
+}
+input:focus,
+textarea:focus,
+.radio:focus {
+	outline: 1px solid #0c443a;
+	cursor: pointer;
+	border: none !important;
+}
+input[type="radio"]:focus {
+    outline: none !important;
+}
+.radio:focus-within {
+	background-color: #8fe8b974;
+}
+
+/*--------
+        Error and success states  --------*/
+.error:user-invalid {
+    border-color: #ff0000;
+}
+.success:user-valid {
+    border-color: #8fe8b9;
+}
+
+/*--------
+            footer  --------*/
+.attribution {
+	font-size: 0.69rem;
+    padding-bottom: 32px;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+a:link {
+    color: blue;
+}
+a:visited {
+    color: #800080;
+}
+
+/*--------
+            Media queries --------*/
+@media (min-width: 800px) {
+    .form-section div:first-child {
+        margin-bottom: 0;
+    }
+    .d-flex-desktop {
+        display: flex;
+    }
+    .input-width {
+        flex: 1;
+        min-width: 300px;
+    }
+    .margin-r {
+        margin-right: 20px;
+    }
+}
