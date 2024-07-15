@@ -8,7 +8,7 @@
 }
 html, body {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
 }
 
 body {
@@ -93,6 +93,9 @@ textarea,
 fieldset {
 	border: 0;
 }
+textarea {
+    resize: vertical;
+}
 /* change Styling for radio buttons and checkboxes */
 input[type="radio"],
 input[type="checkbox"] {
@@ -123,6 +126,9 @@ textarea:hover {
 button:focus-visible {
 	outline-color: #8fe8b9;
 }
+button:hover, button:active {
+    background-color: #0c443ae0;
+}
 input:focus,
 textarea:focus,
 .radio:focus {
@@ -150,7 +156,7 @@ input[type="radio"]:focus {
             footer  --------*/
 .attribution {
 	font-size: 0.69rem;
-    padding-bottom: 32px;
+    padding: 32px;
 }
 .attribution a {
 	color: hsl(228, 45%, 44%);
