@@ -119,7 +119,8 @@ textarea:active,
 .radio:hover,
 input:hover,
 textarea:hover {
-	border: 1px solid #0c443a;
+	border-color: #0c443a;
+    border-radius: 6px;
 	cursor: pointer;
 }
 /* when user on keyboard only */
