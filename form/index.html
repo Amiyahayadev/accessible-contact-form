@@ -1,167 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0" />
-		<!-- displays site properly based on user's device -->
-		<meta
-			name="description"
-			content="Contact us today by filling out our accessible contact form.
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <meta name="description" content="Contact us today by filling out our accessible contact form.
         Get in touch with our team for inquiries, feedback, or support." />
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="./assets/images/favicon-32x32.png" />
-		<link rel="stylesheet" href="css/style.css" />
-		<title>Frontend Mentor | Contact form</title>
-	</head>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | Contact form</title>
+</head>
 
-	<body>
-		<main>
-			<form action="index.html" method="post">
-				<h1>Contact Us</h1>
-				<!-- section 1 -->
-				<div
-					class="form-section d-flex-desktop justify-between">
-					<div class="input-width margin-r">
-						<label
-							for="first-name"
-							class="labels d-block"
-							>First Name&nbsp;<span>*</span></label
-						>
-						<input
-							name="first-name"
-							id="first-name"
-							required
-							autocomplete="given-name"
-							class="width-100 field-txt error success" />
-					</div>
-					<div class="input-width">
-						<label
-							for="last-name"
-							class="labels d-block"
-							>Last Name&nbsp;<span>*</span></label
-						>
-						<input
-							name="last-name"
-							id="last-name"
-							required
-							autocomplete="family-name"
-							class="width-100 field-txt error success" />
-					</div>
-				</div>
+<body>
+    <main>
+        <form action="index.html" method="post">
+            <h1>Contact Us</h1>
+            <!-- section 1 -->
+            <div class="form-section d-flex-desktop justify-between">
+                <div class="input-width margin-r">
+                    <label for="first-name" class="labels d-block">First Name&nbsp;<span>*</span></label>
+                    <input name="first-name" id="first-name" required autocomplete="given-name"
+                        class="width-100 field-txt error success" />
+                </div>
+                <div class="input-width">
+                    <label for="last-name" class="labels d-block">Last Name&nbsp;<span>*</span></label>
+                    <input name="last-name" id="last-name" required autocomplete="family-name"
+                        class="width-100 field-txt error success" />
+                </div>
+            </div>
 
-				<!-- section 2 -->
-				<div class="form-section">
-					<label for="email" class="labels d-block"
-						>Email Address&nbsp;<span>*</span></label
-					>
-					<input
-						name="email"
-						id="email"
-						required
-						autocomplete="email"
-						class="width-100 field-txt error success" />
-					<!--VALIDATION  This field is required, Please enter a valid email address-->
-				</div>
+            <!-- section 2 -->
+            <div class="form-section">
+                <label for="email" class="labels d-block">Email Address&nbsp;<span>*</span></label>
+                <input name="email" id="email" required autocomplete="email"
+                    class="width-100 field-txt error success" />
+                <!--VALIDATION  This field is required, Please enter a valid email address-->
+            </div>
 
-				<!-- section 3 -->
-				<fieldset
-					class="form-section"
-					aria-labelledby="query-type">
-					<legend id="query-type" class="labels d-block">
-						Query Type&nbsp;<span>*</span>
-					</legend>
-					<div class="d-flex-desktop justify-between">
-						<p
-							class="radio align-vertical input-width margin-r"
-							tabindex="0">
-							<input
-								type="radio"
-								name="query-type"
-								id="general-query"
-								value="general enquiry" />
-							<label
-								for="general-query"
-								class="unique-label"
-								>General Enquiry</label
-							>
-						</p>
-						<p
-							class="radio align-vertical input-width"
-							tabindex="0">
-							<input
-								type="radio"
-								name="query-type"
-								id="support-query"
-								value="support request" />
-							<label
-								for="support-query"
-								class="unique-label"
-								>support-query</label
-							>
-						</p>
-					</div>
+            <!-- section 3 -->
+            <fieldset class="form-section" aria-labelledby="query-type">
+                <legend id="query-type" class="labels d-block">
+                    Query Type&nbsp;<span>*</span>
+                </legend>
+                <div class="d-flex-desktop justify-between">
+                    <p class="radio align-vertical input-width margin-r" tabindex="0">
+                        <input type="radio" name="query-type" id="general-query" value="general enquiry" />
+                        <label for="general-query" class="unique-label">General Enquiry</label>
+                    </p>
+                    <p class="radio align-vertical input-width" tabindex="0">
+                        <input type="radio" name="query-type" id="support-query" value="support request" />
+                        <label for="support-query" class="unique-label">support-query</label>
+                    </p>
+                </div>
 
-					<!--VALIDATION Please select a query type -->
-				</fieldset>
+                <!--VALIDATION Please select a query type -->
+            </fieldset>
 
-				<!-- section 4 -->
-				<div class="form-section">
-					<label for="message" class="labels d-block"
-						>Message&nbsp;<span>*</span></label
-					>
-					<textarea
-						name="message"
-						id="message"
-						cols="30"
-						rows="5"
-						class="width-100 field-txt error success"
-						required></textarea>
-				</div>
+            <!-- section 4 -->
+            <div class="form-section">
+                <label for="message" class="labels d-block">Message&nbsp;<span>*</span></label>
+                <textarea name="message" id="message" cols="30" rows="5" class="width-100 field-txt error success"
+                    required></textarea>
+            </div>
 
-				<!-- section 5 -->
-				<div class="form-section">
-					<div class="align-vertical">
-						<input
-							type="checkbox"
-							name="consent-check"
-							id="consent-check"
-							class="custom-checkbox"
-							required />
-						<label
-							for="consent-check"
-							class="labels unique-label"
-							>I consent to being contacted by the
-							team&nbsp;<span>*</span></label
-						>
-					</div>
-					<!--VALIDATION To submit this form, please consent to being contacted -->
-				</div>
+            <!-- section 5 -->
+            <div class="form-section">
+                <div class="align-vertical">
+                    <input type="checkbox" name="consent-check" id="consent-check" class="custom-checkbox" required />
+                    <label for="consent-check" class="labels unique-label">I consent to being contacted by the
+                        team&nbsp;<span>*</span></label>
+                </div>
+                <!--VALIDATION To submit this form, please consent to being contacted -->
+            </div>
 
-				<button class="button d-block width-100 txt-centered">
-					Submit
-				</button>
-				<!-- message to confirm form submission -->
-				<!--
+            <button class="button d-block width-100 txt-centered">
+                Submit
+            </button>
+            <!-- message to confirm form submission -->
+            <!--
                      Message Sent!
                     Thanks for completing the form. We'll be in touch soon!
                 -->
-			</form>
-		</main>
-		<footer>
-			<div class="attribution txt-centered">
-				Challenge by
-				<a href="https://www.frontendmentor.io?ref=challenge"
-					>Frontend Mentor</a
-				>. Coded by
-				<a href="https://github.com/Amiyahayadev"
-					>Dev Amina Yahaya</a
-				>.
-			</div>
-		</footer>
-	</body>
+        </form>
+    </main>
+    <footer>
+        <div class="attribution txt-centered">
+            Coded by
+            <a href="https://github.com/Amiyahayadev/accessible-contact-form" target="_blank">Amina Yahaya</a>.
+        </div>
+    </footer>
+</body>
+
 </html>
